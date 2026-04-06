@@ -32,4 +32,8 @@ public class UserRepository {
         System.out.println(String.format("FIND/id - receiving the id: %d for find user", id));
         return new User("john", "password123");
     }
+    public User findByName(String userName) {
+        System.out.println(String.format("FIND/userName - receiving the userName: %s for find user", userName));
+        return new User("john", "password123");
+    }
 }
