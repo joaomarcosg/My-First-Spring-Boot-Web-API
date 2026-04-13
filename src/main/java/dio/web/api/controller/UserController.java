@@ -20,7 +20,7 @@ public class UserController {
     public User getUser(@PathVariable("userName") String userName) {
         return userRepository.findByName(userName);
     }
-    @DeleteMapping("/delete/{id")
+    @DeleteMapping("/delete/{id}")
     public void deleteUser(@PathVariable("id") Integer id) {
         userRepository.deleteById(id);
     }
